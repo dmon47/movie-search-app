@@ -7,7 +7,7 @@ interface OwnProps {
   movie: any
 }
 
-const Movie: React.FC<OwnProps> = ({movie}) => {
+const Movie: React.FC<OwnProps> = ({ movie }) => {
   const poster = movie.Poster === 'N/A' ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
 
   return (
